@@ -8,9 +8,9 @@
       id="{{ skill.name | downcase }}"
       class="skills-images"
     />
-    <p class="skills-text" id="{{ skill.name | downcase }}Content">
-      {{ skill.text }}
-    </p>
+    <div class="skills-text" id="{{ skill.name | downcase }}Content">
+      {{ skill.content }}
+    </div>
     {% endfor %}
   </div>
 </section>

@@ -3,6 +3,7 @@
   width: 100%;
   height: 20vh;
   margin: 16px 0;
+  box-sizing: border-box;
 }
 
 .banner img {
@@ -10,8 +11,8 @@
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
 }
 
 .banner-overlay {
