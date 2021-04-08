@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<header class="banner">
+  <img src="{{ page.image }}" alt="{{ page.name }}" class="banner-image" />
+  <div class="banner-overlay"></div>
+  <h1 class="banner-title">{{ page.name }}</h1>
+</header>
+
+<div class="project-data">
+  <span class="date">{{ page.poject_date }}</span>
+  <div class="tags">
+    {% for tag in page.tags %}
+    <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="content">
+  {{ content }}
+</div>
+
+<a
+  href="{{ page.website }}"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="link"
+  >Go to website</a
+>

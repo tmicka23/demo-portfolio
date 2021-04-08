@@ -1,0 +1,82 @@
+.sidenav {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  background: white;
+  top: 0;
+  bottom: 0;
+  left: -50%;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.js-has-sidenav .sidenav {
+  transform: translateX(100%);
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.sidenav-menu {
+  width: 80%;
+  height: 20%;
+  margin-top: 40%;
+  margin-left: 10%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.sidenav .navbar-brand {
+  display: block;
+  margin-top: 10%;
+  margin-left: 0;
+  width: 90%;
+  text-align: end;
+}
+
+.sidenav-items a {
+  font-weight: 600;
+  font-size: larger;
+  color: #646464;
+  text-decoration: none;
+}
+
+.sidenav-items:nth-child(3) a {
+  font-weight: 800;
+  color: black;
+  text-decoration: underline;
+}
+
+.sidenav-footer {
+  width: 90%;
+  margin-top: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidenav-footer-items:nth-child(2) {
+  margin-left: 20%;
+}
+
+.sidenav-footer-items {
+  color: black;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sidenav {
+    transition: all 0.4s ease-in-out;
+  }
+}

@@ -1,0 +1,18 @@
+<section id="portfolio">
+  <h2 class="section-title">Portfolio</h2>
+  <div class="projects">
+    {% for project in site.projects %}
+    <a class="projects-card" href="{{ project.url }}">
+      <h3 class="projects-title">{{ project.name }}</h3>
+      <p class="projects-summary">
+        {{ project.summary }}
+      </p>
+      <img
+        src="{{ project.image }}"
+        alt="{{ project.name }}"
+        class="projects-images"
+      />
+    </a>
+    {% endfor %}
+  </div>
+</section>

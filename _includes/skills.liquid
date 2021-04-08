@@ -1,0 +1,16 @@
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-box">
+    {% for skill in site.skills %}
+    <img
+      src="{{ skill.image }}"
+      alt="{{ skill.name }}"
+      id="{{ skill.name | downcase }}"
+      class="skills-images"
+    />
+    <p class="skills-text" id="{{ skill.name | downcase }}Content">
+      {{ skill.text }}
+    </p>
+    {% endfor %}
+  </div>
+</section>
